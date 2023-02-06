@@ -6,17 +6,14 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'plugin:prettier/recommended',
   ],
-  overrides: [
-  ],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    'react-hooks',
-  ],
+  plugins: ['react', 'react-hooks', 'prettier'],
   rules: {
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
     'no-unused-expressions': 'off',
@@ -29,5 +26,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/props-types': 'off',
     'react/jsx-no-bind': 'off',
+    'prettier/prettier': 'error',
   },
 };
