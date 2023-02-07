@@ -1,18 +1,34 @@
 import React from 'react';
-import { Title, Subtitle } from './styles';
+import { Container, List, Unit } from './styles';
 
 function Home() {
-    return (
-    <>
-      <Title>Home</Title>
-      <Subtitle>Esta es mi casa</Subtitle>
-      <a href="/cart">Cart</a>
-      <ul>
-        <li>List 1</li>
-        <li>List 2</li>
-      </ul>
-    </>
-);
+  return (
+  <Container>
+    <List>
+        <Unit>
+        <p>Salario</p>
+        <strong>R$ 2.000,00</strong>        
+        </Unit>
+
+        <Unit>
+        <p>Freelancer</p>
+        <strong>R$ 2.000,00</strong>
+                
+        </Unit>
+
+        <Unit>
+        <p>Jantar</p>
+        <strong>R$ 227,00</strong>   
+        </Unit>
+        
+        <Unit>
+        <p>Alquiler</p>
+        <strong>R$ 2.227,00</strong>  
+        </Unit>
+    </List>
+    <button type="button">Nueva Operacion</button>
+  </Container>
+  );
 }
 
 export default Home;
